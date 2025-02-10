@@ -347,7 +347,7 @@
         if (name && email && password) {
           try {
             const response = await fetch(
-              "http://localhost:4000/api/users/signup",
+              "https://first-landing-page-ds5h.onrender.com/api/users/signup",
               {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
@@ -389,7 +389,7 @@
         if (email && password) {
           try {
             const response = await fetch(
-              "http://localhost:4000/api/users/login",
+              "https://first-landing-page-ds5h.onrender.com/api/users/login",
               {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
