@@ -1,0 +1,88 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  width: 40%;
+  border-radius: 10px;
+  color: white;
+  /* backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.1); */
+}
+
+.badge {
+  background: #006653;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background: #006653;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  align-self: center;
+}
+
+.cta-button:hover {
+  background: #006653;
+}
+
+@media (max-width: 768px) {
+  .content {
+    width: 90%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .cta-button {
+    align-self: center;
+  }
+
+  .content-wrapper {
+    justify-content: center;
+  }
+}

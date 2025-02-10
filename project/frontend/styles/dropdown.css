@@ -1,0 +1,52 @@
+/* Dropdown Styling */
+.services1 {
+  padding: 0;
+}
+
+.dropdown {
+  padding: 10px 15px;
+  position: relative;
+}
+
+.dropdown > a {
+  padding: 0;
+}
+
+.link-icon {
+  margin-left: 8px;
+}
+
+.services-link,
+.services-link > .link-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  min-width: 170px;
+  top: 100%;
+  left: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 5px 10px;
+  color: black;
+}
+
+.dropdown-content a:hover {
+  background: #f1f1f1;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}

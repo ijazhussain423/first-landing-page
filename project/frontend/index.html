@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IT Agency</title>
+
+  <!-- CSS Links -->
+  <link rel="stylesheet" href="./styles/home.css" />
+  <link rel="stylesheet" href="./styles/heroSection.css" />
+  <link rel="stylesheet" href="./styles/dropdown.css" />
+  <link rel="stylesheet" href="./styles/blog.css" />
+  <link rel="stylesheet" href="./styles/expertise.css" />
+  <link rel="stylesheet" href="./styles/services.css" />
+  <link rel="stylesheet" href="./styles/about.css" />
+  <link rel="stylesheet" href="./styles/form.css" />
+  <link rel="stylesheet" href="./styles/footer.css" />
+  <!-- Icons link -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <!-- script -->
+  <script defer src="index.js"></script>
+</head>
+
+<body>
+  <!-- header -->
+  <header class="header">
+    <div class="logo-container">
+      <button id="open-menu" class="btn nav-btn btn-danger">
+        <ion-icon size="small" name="menu-outline"></ion-icon>
+      </button>
+      <h2>Techy</h2>
+    </div>
+    <nav id="nav-Box" class="menu-hidden">
+      <a href="#" data-page="home">Home</a>
+      <div class="dropdown">
+        <a class="services-link" href="#services">
+          <span class="link-text">Services</span>
+          <span class="link-icon"><ion-icon size="small" name="chevron-down-outline"></ion-icon></span></a>
+        <div class="dropdown-content">
+          <a href="#seo">SEO</a>
+          <a href="#web-design">Web Design</a>
+          <a href="#digital-marketing">Digital Marketing</a>
+        </div>
+      </div>
+      <a href="#expertise" data-page="package">Our Progress</a>
+      <a href="#about" data-page="about-us">About Us</a>
+      <a href="#blog" data-page="blog">Blog</a>
+    </nav>
+    <div class="btn-container">
+      <button id="login-popup" class="btn btn-orange">Login / Signup</button>
+      <!-- <button id="signup-popup" class="btn btn-orange">Sign Up</button> -->
+    </div>
+  </header>
+
+  <!-- hero section -->
+  <section id="home" class="hero">
+    <video autoplay loop muted>
+      <source src="./images/bg-video.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="content-wrapper">
+      <div class="content">
+        <span class="badge">Exclusive Services</span>
+        <h1>Welcome to Our Website</h1>
+        <p>Discover amazing services with a stunning background video.</p>
+        <button class="cta-button">Get Started</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- services section -->
+  <section id="services" class="sec-container">
+    <h2 class="section-title">Our <span>Services</span></h2>
+
+    <div class="card-container">
+      <!-- Card 1 -->
+      <div class="card">
+        <ion-icon name="code-slash-outline"></ion-icon>
+        <h3>Web Development</h3>
+        <p>We create modern, responsive, and user-friendly websites.</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <ion-icon name="desktop-outline"></ion-icon>
+        <h3>Graphic Design</h3>
+        <p>Creative and innovative designs for branding & UI/UX.</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <ion-icon name="logo-apple-appstore"></ion-icon>
+        <h3>Mobile Apps</h3>
+        <p>Developing fast and scalable mobile applications.</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card">
+        <ion-icon name="bar-chart-outline"></ion-icon>
+        <h3>Digital Marketing</h3>
+        <p>SEO, PPC, and social media strategies to boost your business.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- progress section -->
+  <section id="expertise" class="sec-container">
+    <div class="expertise-section">
+      <div class="expertise-content">
+        <h2>Our <span>Expertise</span></h2>
+        <p>
+          Tek2d started with a dream to be a one-stop solution for our
+          clients. Through all the efforts we have done 4500+ projects and
+          created a dedicated team for each of our services.
+        </p>
+        <div class="stats">
+          <div class="stat">
+            750+
+            <p>Web Development</p>
+            <div class="progress-bar">
+              <div class="progress"></div>
+            </div>
+          </div>
+          <div class="stat">
+            3000+
+            <p>Graphics Designing</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 90%; background: orange"></div>
+            </div>
+          </div>
+          <div class="stat">
+            350+
+            <p>UI/UX Projects</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 70%; background: cyan"></div>
+            </div>
+          </div>
+          <div class="stat">
+            550+
+            <p>Custom Projects</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 75%; background: purple"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="image">
+        <img src="./images/seven.webp" alt="Expertise Illustration" />
+      </div>
+    </div>
+  </section>
+
+  <!-- blog section -->
+  <section id="blog" class="sec-container">
+    <h2 class="section-title">Our <span>Blog</span></h2>
+
+    <div class="container">
+      <div class="blog-card">
+        <img src="./images/one.webp" alt="Card Image" />
+        <div class="card-content">
+          <h3>AI in Robotics</h3>
+          <p>
+            This is a sample description for the card. It is a brief summary.
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <img src="./images/two.webp" alt="Card Image" />
+        <div class="card-content">
+          <h3>IT Trends in 2025</h3>
+          <p>
+            This is a sample description for the card. It is a brief summary.
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <img src="./images/three.webp" alt="Card Image" />
+        <div class="card-content">
+          <h3>SEO Strategies</h3>
+          <p>
+            This is a sample description for the card. It is a brief summary.
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <img src="./images/five.webp" alt="Card Image" />
+        <div class="card-content">
+          <h3>Marketing Benefits</h3>
+          <p>
+            This is a sample description for the card. It is a brief summary.
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <img src="./images/six.webp" alt="Card Image" />
+        <div class="card-content">
+          <h3>App Development Importance</h3>
+          <p>
+            This is a sample description for the card. It is a brief summary.
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <img src="./images/four.webp" alt="Card Image" />
+        <div class="card-content">
+          <h3>Strategies of Marketing</h3>
+          <p>
+            This is a sample description for the card. It is a brief summary.
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- about section -->
+  <section id="about" class="sec-container">
+    <div class="container-sides">
+      <div class="text-content">
+        <h2>Who <span>We</span> Are</h2>
+        <p>
+          Techy is a Design & Development Agency providing high-quality
+          services at a flat hourly rate. Our goal is to provide
+          premium-quality services at affordable prices.
+        </p>
+      </div>
+      <div class="image-content">
+        <img src="./images/eight.webp" alt="Illustration" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-section about">
+          <h2>About Us</h2>
+          <p>
+            We provide top-notch web development and digital marketing
+            services to help your business grow.
+          </p>
+        </div>
+        <div class="footer-section links">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#blog">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-section services">
+          <h2>Our Services</h2>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">SEO Optimization</a></li>
+            <li><a href="#">Digital Marketing</a></li>
+            <li><a href="#">Branding</a></li>
+          </ul>
+        </div>
+        <div class="footer-section social">
+          <h2>Follow Us</h2>
+          <div class="social-icons">
+            <a href="#"><ion-icon size="small" name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon size="small" name="logo-linkedin"></ion-icon></a>
+            <a href="#"><ion-icon size="small" name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon size="small" name="logo-twitter"></ion-icon></a>
+          </div>
+        </div>
+      </div>
+      <p class="footer-bottom">© 2025 YourCompany. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ------------------------------------------------------------------------------------------------------ -->
+  <div id="forms-popup" class="account-overlay hidden">
+    <div class="container-account">
+      <input type="checkbox" id="check" />
+      <div class="login form">
+        <header>Login</header>
+        <form action="#">
+          <input id="login-email" type="text" placeholder="Enter your email" />
+          <input id="login-password" type="password" placeholder="Enter your password" />
+          <a href="#">Forgot password?</a>
+          <input id="login-btn" type="button" class="button" value="Login" />
+          <p id="login-error" style="color: red; display: none">
+            Invalid email or password.
+          </p>
+        </form>
+        <div class="signup">
+          <span class="signup">Don't have an account?
+            <label id="signup-link" for="check">Signup</label>
+          </span>
+        </div>
+      </div>
+      <div class="registration form">
+        <header>Signup</header>
+        <form action="#">
+          <input id="signup-name" type="text" placeholder="Enter your name" />
+          <input id="signup-email" type="text" placeholder="Enter your email" />
+          <input id="signup-password" type="password" placeholder="Create a password" />
+          <input id="signup-btn" type="button" class="button" value="Signup" />
+          <p id="signup-error" style="color: red; display: none">
+            Please fill in all fields.
+          </p>
+        </form>
+        <div class="signup">
+          <span class="signup">Already have an account?
+            <label id="login-link" for="check">Login</label>
+          </span>
+        </div>
+      </div>
+
+      <button id="close-popup" class="btn close-btn btn-danger">
+        <ion-icon size="small" name="close-outline"></ion-icon>
+      </button>
+    </div>
+  </div>
+  <!-- ------------------------------------------------------------------------------------------------------ -->
+
+  <script>
+    // signup
+    document
+      .getElementById("signup-btn")
+      .addEventListener("click", async () => {
+        const name = document.getElementById("signup-name").value.trim();
+        const email = document.getElementById("signup-email").value.trim();
+        const password = document
+          .getElementById("signup-password")
+          .value.trim();
+        const error = document.getElementById("signup-error");
+
+        if (name && email && password) {
+          try {
+            const response = await fetch(
+              "http://localhost:4000/api/users/signup",
+              {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ name, email, password }),
+              }
+            );
+
+            const data = await response.json();
+            console.log(response.status, data); // ✅ Debugging
+
+            if (response.ok) {
+              alert("Sign Up Successful!");
+              document.getElementById("login-link").click();
+              error.style.display = "none";
+            } else {
+              error.textContent = data.message || "Sign Up Failed!";
+              error.style.display = "block";
+            }
+          } catch (err) {
+            error.textContent = "An error occurred. Please try again.";
+            error.style.display = "block";
+          }
+        } else {
+          error.textContent = "All fields are required!";
+          error.style.display = "block";
+        }
+      });
+
+    // Login Functionality
+    document
+      .getElementById("login-btn")
+      .addEventListener("click", async () => {
+        const email = document.getElementById("login-email").value.trim();
+        const password = document
+          .getElementById("login-password")
+          .value.trim();
+        const error = document.getElementById("login-error");
+
+        if (email && password) {
+          try {
+            const response = await fetch(
+              "http://localhost:4000/api/users/login",
+              {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ email, password }),
+              }
+            );
+
+            const data = await response.json();
+
+            if (response.ok) {
+              alert(`Welcome back, ${data.user.name}!`);
+              localStorage.setItem("user", JSON.stringify(data.user));
+              error.style.display = "none";
+            } else {
+              error.textContent =
+                data.message || "Invalid email or password.";
+              error.style.display = "block";
+            }
+          } catch (err) {
+            error.textContent = "An error occurred. Please try again.";
+            error.style.display = "block";
+          }
+        } else {
+          error.textContent = "All fields are required!";
+          error.style.display = "block";
+        }
+      });
+  </script>
+</body>
+
+</html>
