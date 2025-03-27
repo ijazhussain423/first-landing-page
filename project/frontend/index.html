@@ -17,8 +17,8 @@
   <link rel="stylesheet" href="./styles/form.css" />
   <link rel="stylesheet" href="./styles/footer.css" />
   <!-- Icons link -->
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
   <!-- script -->
   <script defer src="index.js"></script>
@@ -400,6 +400,7 @@
             const data = await response.json();
 
             if (response.ok) {
+              closeForm()
               alert(`Welcome back, ${data.user.name}!`);
               localStorage.setItem("user", JSON.stringify(data.user));
               error.style.display = "none";

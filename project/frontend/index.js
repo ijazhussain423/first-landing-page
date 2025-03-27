@@ -3,13 +3,16 @@ const openPopup = document.getElementById("login-popup");
 const closePopup = document.getElementById("close-popup");
 const popupBox = document.getElementById("forms-popup");
 
+function closeForm(e) {
+  popupBox.classList.add("hidden");
+
+}
+
 openPopup.addEventListener("click", () => {
   popupBox.classList.remove("hidden");
 });
 
-closePopup.addEventListener("click", (e) => {
-  popupBox.classList.add("hidden");
-});
+closePopup.addEventListener("click", closeForm);
 
 // signup popup functionality
 // const signupPopup = document.getElementById("signup-popup");
